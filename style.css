@@ -12,3 +12,31 @@
     --helpdesk-azul: #18CCFF
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.topHead {
+    height: 80px;
+    width: 100%;
+    background-color: blue;
+}
+
+.banner {
+    height: 400px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.navBar {
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
