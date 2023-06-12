@@ -298,15 +298,14 @@
     padding-bottom: 3vh;
 }
 
-/* COR DO BOTAO DA LI */
+/* COR DO PONTO DA LI */
 li {
-    color: #042541;
+    color: #053763;
 }
 
 /* TEXTO DOS TOPICOS */
 .topicsGrid a {
     color: var(--azul-escuro);
-    font-weight: 300;
     font-size: 18px
 }
 
@@ -338,7 +337,13 @@ li {
     font-size: 12px;
 }
 
-
+/* PAGE AJUDA */
+/* INPUT DE DIGITAR DUVIDAS */
+.box-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #questionInput {
     border-radius: 1.5vh;
     width: 100vh;
@@ -354,6 +359,11 @@ li {
     font-weight: 500;
 }
 
+.search_icon {
+    width: 5vh;
+    margin-right: 2vh;
+}
+/* CUSTOMIZAÇÃO DO INPUT DEPENDENDO DO SAFER SELECIONADO */
 .saferERP-input {
     border: 0.35vh solid var(--azul-secundario);
     color: var(--azul-secundario)
@@ -377,4 +387,124 @@ li {
 .saferHelpdesk-input {
     border: 0.35vh solid var(--helpdesk-azul);
     color: var(--helpdesk-azul);
+}
+
+/* SUBTITULO PARA O H4 */
+.subtittle-H4 {
+    font-size: 20px;
+    color: var(--azul-principal);
+    font-weight: 700;
+    padding-bottom: 0.8vh;
+}
+
+.subtittle-H4:hover {
+    text-decoration: underline;
+    filter: brightness(0.8);
+}
+
+/* CASE DO CONTEUDO ABAIXO DO INPUT */
+.contentSubBox {
+    border-top: 0.5vh solid #ededed;
+    margin-top: 4vh;
+    padding: 4vh;
+    padding-bottom: 1vh;
+    display: flex;
+    gap: 4vh;
+}
+
+/* CASE DE CONTEUDO DOS ATALHOS "PRIMEIORS PASSOS", "BASE CONHECIMENTO", etc */
+.shortCut-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    /* border-right: 0.5vh solid #ededed; */
+    padding-right: 12vh;
+}
+
+/* CASES INDIVIDUAIS DE CADA ATALHO */
+.caseIten-shortcut {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+/* REDIMENSIONAMENTO DOS ICONES DOS ATALHOS */
+.IconShortCut {
+    width: 10vh;
+}
+
+.IconShortCut:hover {
+    filter: brightness(0.8);
+}
+
+.textShortCut p{
+    font-size: 14px;
+}
+
+/* BOX DA AREA CONTATO/SUPORTE */
+.suporte-box {
+    border-top: 0.5vh solid #ededed;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    padding-right: 4vh;
+}
+
+/* CASE INDIVIDUAL DE CADA PARTE DO CONTATO */
+.box-contact {
+    margin-bottom: 2vh;
+}
+
+.box-contact h4{
+    font-size: 18px;
+}
+
+.box-contact p {
+    padding-left: 2.5vh;
+    padding-top: 0.4vh;
+    color: #999999;
+}
+
+/* TOPICO DAS "DUVIDAS FREQUENTES" */
+.topic-case li {
+    padding-top: 1.5vh;
+}
+
+.topic-case li:first-child {
+    padding-top: 0;
+}
+
+.topic-case li:last-child {
+    padding-bottom: 1.5vh;
+}
+
+/* BOX GERAL DAS DUVIDAS FREQUENTES */
+.topicBox {
+    padding-left: 10vh;
+}
+
+/* CADA TOPICO */
+.topicsTxt a {
+    color: var(--azul-escuro);
+    font-size: 16px
+}
+
+.topicsTxt a:hover {
+    text-decoration: underline;
+}
+
+/* CUSTOMIZAÇÃO DO TOPICO "DUVIDAS FREQUENTES" DEPENDENDO DO SAFER SELECIONADO */
+.saferERP-h3 {
+    color: var(--azul-secundario);
+}
+.saferProducao-h3 {
+    color: var(--producao-laranja);
+}
+.saferTransporte-h3 {
+    color: var(--transporte-amarelo);
+}
+.saferHelpdesk-h3 {
+    color: var(--helpdesk-azul);
+}
+.saferManager-h3 {
+    color: var(--manager-verde);
 }
