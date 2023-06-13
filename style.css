@@ -22,6 +22,10 @@
     transition: .4s;
 }
 
+*::selection {
+    background-color: rgba(129, 129, 129, 0.3);
+}
+
 /* CLASS CONTEINER CONTIDA NO MAIN */
 .conteiner {
     min-height: 100vh;
@@ -71,14 +75,26 @@
     color: #ffffff;
 }
 
-.centroAprendizagem a {
+.linkBackHead {
     color: white;
 }
 
-.centroAprendizagem a:hover {
+.linkBackHead:hover {
     color: white;
     text-decoration: underline;
 }
+
+.linkBackHead-chield {
+    color: white;
+    margin-left: 1vh;
+    padding-top: 0.5vh;
+}
+
+.linkBackHead-chield:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 
 .centroAprendizagem p {
     color: white;
@@ -285,11 +301,18 @@
     width: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10vh;
     column-gap: 5vh;
-    row-gap: 8vh;
+    row-gap: 5vh;
 }
-
+.topicsGrid-baseConhecimento {
+    padding-left: 0vh;
+    padding-right: 0vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5vh;
+    row-gap: 5vh;
+}
 /* SUBTITULO DOS TOPICOS */
 .subtittle-H3 {
     font-size: 30px;
@@ -316,6 +339,9 @@ li {
 /* TOPICOS ENQUADRAMENTO */
 .sectionTopics {
     margin-bottom: 6vh;
+}
+.sectionTopicsBottom {
+    margin-bottom: 3vh;
 }
 
 /* FOOTER DA PÁGINA */
@@ -449,6 +475,20 @@ li {
     padding-right: 4vh;
 }
 
+.suporte-PagPrincipal {
+    margin-top: 3vh;
+    border-top: 0.5vh solid #ededed;
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.case-content-suporte {
+    display: flex;
+    column-gap: 5vh;
+}
 /* CASE INDIVIDUAL DE CADA PARTE DO CONTATO */
 .box-contact {
     margin-bottom: 2vh;
@@ -465,6 +505,11 @@ li {
 }
 
 /* TOPICO DAS "DUVIDAS FREQUENTES" */
+.topic-case {
+    display: flex;
+    flex-direction: column;
+    width: 45vh;
+}
 .topic-case li {
     padding-top: 1.5vh;
 }
