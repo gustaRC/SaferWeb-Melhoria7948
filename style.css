@@ -95,8 +95,14 @@
     text-decoration: underline;
 }
 
+.linkBackHead-chield:hover:last-child {
+    color: white;
+    text-decoration: none;
+}
 
-.centroAprendizagem p {
+
+
+.linkBackHead-chield {
     color: white;
     margin-left: 1vh;
     padding-top: 0.5vh;
@@ -107,9 +113,16 @@
 }
 
 /* CAMPO AJUDA E LOGIN */
+.btnOptions {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
 .btnOptions a{
     padding: 8px;
-    padding-left: 12px;
+    /* padding-left: 12px; */
     padding-right: 12px;
     font-size: 22px;
     margin-left: 40px;
@@ -117,6 +130,9 @@
     position: relative;
 }
 
+#ajudaBtn {
+    margin-left: 0px;
+}
 /* ANIMAÇÃO BOTAO AJUDA */
 .btnOptions #ajudaBtn::after {
     content: "";
@@ -165,11 +181,6 @@
     background-position: center;
 }
 
-/* REDIMENSIONAR IMGS */
-.boxItem-navBar img{
-    width: 20vh;
-}
-
 /* BARRA DE NAVEGAÇÃO DOS SAFERS */
 .navBar {
     width: 100%;
@@ -203,9 +214,14 @@
     transition: .4s;
 }
 
-/* DEFINIR CURSOR COMO POINTER */
-.cursor-pointer {
-    cursor: pointer;
+/* REDIMENSIONAR IMGS */
+.boxItem-navBar img{
+    width: 75%;
+}
+
+.boxItem-navBar img:hover {
+    width: 90%;
+    transition: .3s;
 }
 
 /* TRANSIÇÃO DAS IMGS */
@@ -213,9 +229,9 @@
     transition: .2s;
 }
 
-.boxItem-navBar img:hover {
-    width: 26vh;
-    transition: .3s;
+/* DEFINIR CURSOR COMO POINTER */
+.cursor-pointer {
+    cursor: pointer;
 }
 
 /* LINHA DE BAIXO SAFER ERP */
@@ -286,8 +302,8 @@
 /* SECTION DE CONTEUDO */
 .contentBox {
     padding: 4vh;
+    padding-right: 10vh;
     padding-left: 10vh;
-    /* padding-right: 12vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,8 +388,8 @@ li {
 }
 #questionInput {
     border-radius: 1.5vh;
-    width: 100vh;
-    height: 6vh;
+    width: 1000px;
+    height: 50px;
     padding-left: 2vh;
     padding-right: 2vh;
     font-size: 2vh;
@@ -391,27 +407,27 @@ li {
 }
 /* CUSTOMIZAÇÃO DO INPUT DEPENDENDO DO SAFER SELECIONADO */
 .saferERP-input {
-    border: 0.35vh solid var(--azul-secundario);
+    border: 3px solid var(--azul-secundario);
     color: var(--azul-secundario)
 }
 
 .saferProducao-input {
-    border: 0.35vh solid var(--producao-laranja);
+    border: 3px solid var(--producao-laranja);
     color: var(--producao-laranja);
 }
 
 .saferTransporte-input {
-    border: 0.35vh solid var(--transporte-amarelo);
+    border: 3px solid var(--transporte-amarelo);
     color: var(--transporte-amarelo);
 }
 
 .saferManager-input {
-    border: 0.35vh solid var(--manager-verde);
+    border: 3px solid var(--manager-verde);
     color: var(--manager-verde);
 }
 
 .saferHelpdesk-input {
-    border: 0.35vh solid var(--helpdesk-azul);
+    border: 3px solid var(--helpdesk-azul);
     color: var(--helpdesk-azul);
 }
 
@@ -435,7 +451,10 @@ li {
     padding: 4vh;
     padding-bottom: 1vh;
     display: flex;
-    gap: 4vh;
+    flex-wrap: wrap-reverse;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10vh;
 }
 
 /* CASE DE CONTEUDO DOS ATALHOS "PRIMEIORS PASSOS", "BASE CONHECIMENTO", etc */
@@ -452,6 +471,11 @@ li {
     display: flex;
     align-items: center;
     gap: 2vh;
+    margin-top: 2vh;
+}
+
+.caseIten-shortcut:first-child {
+    margin-top: 0;
 }
 
 /* REDIMENSIONAMENTO DOS ICONES DOS ATALHOS */
@@ -506,9 +530,10 @@ li {
 
 /* TOPICO DAS "DUVIDAS FREQUENTES" */
 .topic-case {
-    display: flex;
-    flex-direction: column;
-    width: 45vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* width: 1000px; */
+    column-gap: 6vh;
 }
 .topic-case li {
     padding-top: 1.5vh;
@@ -524,7 +549,7 @@ li {
 
 /* BOX GERAL DAS DUVIDAS FREQUENTES */
 .topicBox {
-    padding-left: 10vh;
+    /* padding-left: 10vh; */
 }
 
 /* CADA TOPICO */
@@ -553,3 +578,62 @@ li {
 .saferManager-h3 {
     color: var(--manager-verde);
 }
+
+/* MEDIA QUERYs */
+@media (max-width: 1396px) {
+    .topic-case {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shortCut-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+        padding-top: 4vh;
+        border-top: 0.5vh solid #ededed;
+        gap: 6vh;
+    }
+    .suporte-box {
+        border-top: 0;
+        margin-left: 5vh;
+    }
+    .contentSubBox {
+        gap: 4vh;
+    }
+}
+
+@media (max-width: 1260px) {
+    .topHead {
+        padding-left: 8vh;
+        padding-right: 8vh;
+    }
+    .linkBackHead {
+        font-size: 20px;
+    }
+    #questionInput {
+        width: 800px;
+    }
+    /* .boxItem-navBar img{
+        width: 160px;
+    }
+    .boxItem-navBar img:hover {
+        width: 200px;
+    } */
+    
+}
+
+@media (max-width: 1120px) {
+    .topicsGrid-baseConhecimento {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #questionInput {
+        width: 600px;
+    }
+    .navBar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* .boxItem-navBar img:hover {
+        width: 180px;
+    } */
+}   
