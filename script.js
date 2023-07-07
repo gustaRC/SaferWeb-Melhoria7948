@@ -26,7 +26,7 @@ function changeSaferCurrent(ev) {
         bannerImg("url(./img/banners/SaferProdução-banner.png)")
     } else if (currentSafer.id == "safer-transporte"){
         removeClassSafers()
-        saferTransporte.classList.add("saferTransporte-lineBottom") 
+        saferTransporte.classList.add("saferTransporte-lineBottom")
         bannerImg("url(./img/banners/SaferTransporte-banner.png)")
     } else if (currentSafer.id == "safer-helpdesk") {
         removeClassSafers()

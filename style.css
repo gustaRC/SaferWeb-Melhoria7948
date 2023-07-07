@@ -48,6 +48,7 @@
     width: 100%;
     background-color: var(--azul-escuro);
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content:space-between;
     align-items: center;
     padding-left: 12vh;
@@ -60,8 +61,9 @@
 /* CONTEM A FRASE E A LOGO BELT */
 .centroAprendizagem {   
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     /* gap: 15px; */
 }
 
@@ -75,6 +77,10 @@
     color: #ffffff;
 }
 
+.h2-img-centroAprendizagem {
+    display: flex;
+    align-items: center;
+}
 .linkBackHead {
     color: white;
 }
@@ -100,8 +106,6 @@
     text-decoration: none;
 }
 
-
-
 .linkBackHead-chield {
     color: white;
     margin-left: 1vh;
@@ -109,13 +113,17 @@
 }
 #logo-belt {
     margin-right: 20px;
-    width: 12vh;
+    width: 100px;
 }
 
+.guias {
+    display: flex;
+    flex-wrap: wrap;
+}
 /* CAMPO AJUDA E LOGIN */
 .btnOptions {
     display: flex;
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
     justify-content: center;
     align-items: center;
 }
@@ -125,13 +133,13 @@
     /* padding-left: 12px; */
     padding-right: 12px;
     font-size: 22px;
-    margin-left: 40px;
+    margin-left: 20px;
     color: white;
     position: relative;
 }
 
 #ajudaBtn {
-    margin-left: 0px;
+    margin-left: 10px;
 }
 /* ANIMAÇÃO BOTAO AJUDA */
 .btnOptions #ajudaBtn::after {
@@ -313,7 +321,7 @@
 /* TOPICOS SECTION */
 .topicsGrid {
     padding-left: 2vh;
-    padding-right: 12vh;
+    /* padding-right: 12vh; */
     width: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -368,6 +376,7 @@ li {
     bottom: 0px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding-left: 10vh;
     padding-right: 10vh;
@@ -502,8 +511,10 @@ li {
 .suporte-PagPrincipal {
     margin-top: 3vh;
     border-top: 0.5vh solid #ededed;
-    padding: 3vh;
+    padding: 2vh;
+    padding-top: 3vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -511,6 +522,7 @@ li {
 
 .case-content-suporte {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 5vh;
 }
 /* CASE INDIVIDUAL DE CADA PARTE DO CONTATO */
@@ -633,7 +645,219 @@ li {
         padding-left: 20px;
         padding-right: 20px;
     }
+    .topHead {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     /* .boxItem-navBar img:hover {
         width: 180px;
     } */
+    #loginBtn {
+        background-color: #ffffff;
+        color: var(--azul-escuro);
+        border-radius: 10px;
+        border: 2px solid #eeeeee;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    #ajudaBtn {
+        font-size: 18px;
+    }
+    .linkBackHead-chield {
+        font-size: 14px;
+    }
+    .subtittle-H3 {
+        font-size: 26px;
+    }
+    .topicsTxt a {
+        font-size: 14px;
+    }
+    .box-contact h4 {
+        font-size: 16px;
+    }
+    .box-contact p {
+        font-size: 14px;
+    }
 }   
+@media (max-width: 960px) {
+    .linkBackHead {
+        font-size: 18px;
+    }
+    #logo-belt {
+        margin-right: 10px;
+        width: 80px;
+    }
+    .centroAprendizagem h2 {
+        padding-left: 10px;
+    }
+    .topicsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contentSubBox {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .contentBox {
+        padding-right: 6vh;
+        padding-left: 6vh;
+    }
+}
+@media (max-width: 700px) {
+    .banner {
+        height: 30vh;
+    }
+}
+@media (max-width: 680px) {
+    #questionInput {
+        width: 500px;
+    }
+    .contentBox {
+        padding-right: 2vh;
+        padding-left: 2vh;
+    }
+    .topic-case{
+        column-gap: 2vh;
+    }
+    .navBar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .shortCut-box {
+        column-gap: 3vh;
+    }
+    .topHead {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 639px) {
+    .shortCut-box {
+        flex-wrap: wrap;
+        gap: 2vh;
+    }
+}
+
+@media (max-width: 599px) {
+    .linkBackHead {
+        font-size: 16px;
+    }
+    .linkBackHead-chield {
+        font-size: 14px;
+    }
+    #ajudaBtn {
+        font-size: 16px;
+    }
+    #loginBtn {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+    .topicsGrid-baseConhecimento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .webBottom {
+        padding-left: 4vh;
+        padding-right: 4vh;
+    }
+}
+
+@media (max-width: 590px) {
+    #questionInput {
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navBar {
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .lineBetween {
+        height: 2px;
+        width: 80%;
+    }
+    .banner {
+        height: 25vh;
+    }
+    .topicsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .subtittle-H3 {
+        font-size: 22px;
+    }
+    .subtittle-H4 {
+        font-size: 18px;
+    }
+    .textShortCut p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+    #questionInput {
+        width: 300px;
+    }
+    .topHead {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .btnOptions {
+        margin-bottom: 15px;
+    }
+    .centroAprendizagem {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .topic-case {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3vh;
+    }
+    .topicsGrid-baseConhecimento {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3vh;
+    }
+    .topicsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3vh;
+    }
+    .topic-case li {
+        padding-top: 0vh;
+    }
+    .centroAprendizagem {
+        margin-bottom: 8px;
+    }
+    .linkBackHead-chield {
+        margin-top: 8px;
+    }
+    .webBottom {
+        height: 6vh;
+        justify-content: center;
+    }
+    .search_icon {
+        margin-right: 1vh;
+    }
+}
+
+@media (max-width: 350px) {
+    #questionInput {
+        width: 250px;
+    }
+    /* .contentSubBox {
+        padding-left: 2vh;
+    } */
+    .contentBox {
+        padding-bottom: 1vh;
+    }
+    .banner {
+        height: 18vh;
+    }
+}
